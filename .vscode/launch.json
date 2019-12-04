@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - P3Tester",
+            "request": "launch",
+            "mainClass": "P3Tester"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - P3Tester",
+            "request": "launch",
+            "mainClass": "P3Tester",
+            "projectName": "project3_1fc2186e"
+        }
+    ]
+}

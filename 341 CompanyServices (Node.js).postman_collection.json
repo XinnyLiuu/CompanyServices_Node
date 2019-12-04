@@ -1,0 +1,572 @@
+{
+	"info": {
+		"_postman_id": "831e9fc4-1e66-4eda-99cf-b84a9428110d",
+		"name": "341 CompanyServices (Node.js)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Departments",
+			"item": [
+				{
+					"name": "GET departments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/CompanyServices/departments?company=xl4998",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"departments"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET department",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/CompanyServices/department?company=xl4998&dept_id=108",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"department"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "dept_id",
+									"value": "108"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT department",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"company\": \"xl4998\",\n\t\"dept_id\": 108,\n\t\"dept_name\": \"IT\",\n\t\"dept_no\": \"xl4998123\",\n\t\"location\": \"Rochester\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/CompanyServices/department",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST  department",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "company",
+									"value": "xl4998",
+									"type": "text"
+								},
+								{
+									"key": "dept_name",
+									"value": "Create Department Test",
+									"type": "text"
+								},
+								{
+									"key": "dept_no",
+									"value": "xl4998TEST",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "New York",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/CompanyServices/department",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE department",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/CompanyServices/department?company=xl4998&dept_id=111",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"department"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "dept_id",
+									"value": "111"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "GET employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/CompanyServices/employees?company=xl4998",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"employees"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/CompanyServices/employee?company=xl4998&emp_id=76",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"employee"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "emp_id",
+									"value": "76"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST  employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "company",
+									"value": "xl4998",
+									"type": "text"
+								},
+								{
+									"key": "emp_name",
+									"value": "CREATE EMPLOYEE TEST",
+									"type": "text"
+								},
+								{
+									"key": "emp_no",
+									"value": "xl4998TEST",
+									"type": "text"
+								},
+								{
+									"key": "hire_date",
+									"value": "2019-10-21",
+									"type": "text"
+								},
+								{
+									"key": "job",
+									"value": "Garbage Man",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "dept_id",
+									"value": "108",
+									"type": "text"
+								},
+								{
+									"key": "mng_id",
+									"value": "76",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/CompanyServices/employee",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT employee",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"company\": \"xl4998\",\n\t\"emp_id\": 78,\n\t\"emp_name\": \"Test 2\",\n\t\"emp_no\": \"xl4998123\",\n\t\"hire_date\": \"2019-11-05\",\n\t\"job\": \"Programmer\",\n\t\"salary\": \"5000\",\n\t\"dept_id\": 110,\n\t\"mng_id\": 76\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/CompanyServices/employee",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/CompanyServices/employee?company=xl4998&emp_id=78",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"employee"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "emp_id",
+									"value": "78"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Timecards",
+			"item": [
+				{
+					"name": "GET timecards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/CompanyServices/timecards?company=xl4998&emp_id=86",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"timecards"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "emp_id",
+									"value": "86"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET timecard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/CompanyServices/timecard?company=xl4998&timecard_id=26",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"timecard"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "timecard_id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST  timecard",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "emp_id",
+									"value": "77",
+									"type": "text"
+								},
+								{
+									"key": "start_time",
+									"value": "2019-12-03 06:30:00",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "2019-12-03 12:30:00",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "xl4998",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/CompanyServices/timecard",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"timecard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE timecard",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/CompanyServices/timecard?company=xl4998&timecard_id=28",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"timecard"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "xl4998"
+								},
+								{
+									"key": "timecard_id",
+									"value": "28"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT timecard",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"company\": \"xl4998\",\n\t\"timecard_id\": 28,\n\t\"emp_id\": 76,\n\t\"start_time\": \"2019-12-04 06:00:00\",\n\t\"end_time\": \"2019-12-04 07:00:00\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/CompanyServices/timecard",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CompanyServices",
+								"timecard"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "DELETE company",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/CompanyServices/company?company=xl4998",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CompanyServices",
+						"company"
+					],
+					"query": [
+						{
+							"key": "company",
+							"value": "xl4998"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
